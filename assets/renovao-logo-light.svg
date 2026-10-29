@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 92" role="img" aria-labelledby="title"><title id="title">RENOVAO – obnova betonových plotů</title><g transform="translate(2 6)" stroke-linejoin="round"><path d="M5 14 68 2l36 12v54L41 84 5 69Z" fill="#34383a" stroke="#272b2d" stroke-width="4"/><path d="m12 22 53-10v9L12 31zm0 18 53-10v9L12 49zm0 18 53-10v9L12 67z" fill="#e7e7e2"/><path d="m72 13 25 9v10L72 24zm0 20 25 9v10L72 44zm0 20 25 9v10L72 64z" fill="#bfc3c1"/><path d="M3 71c22 12 57 8 88-14 10-7 19-18 25-30" fill="none" stroke="#159254" stroke-width="7" stroke-linecap="round"/><path d="m118 2 4 9 10 2-8 6 2 10-8-6-9 5 4-9-7-7 10 1z" fill="#0dc36f"/><path d="m109 35 2 5 5 1-4 3 1 5-4-3-5 3 2-5-4-3 5-.3z" fill="#19b66b"/></g><text x="145" y="66" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="56" letter-spacing="-2">RENOVAO</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 92" role="img" aria-labelledby="logoTitle">
+<title id="logoTitle">RENOVAO</title>
+<g transform="translate(3 4)" stroke-linejoin="round">
+<!-- Tři betonové panely v perspektivním zalomení -->
+<path d="M8 24 37 17 37 65 8 72Z" fill="#505456" stroke="#292e30" stroke-width="2"/>
+<path d="m37 17 42 8v45l-42-5z" fill="#363b3d" stroke="#292e30" stroke-width="2"/>
+<path d="m79 25 31-12v45L79 70z" fill="#252b2d" stroke="#202527" stroke-width="2"/>
+<!-- vodorovné betonové desky a jejich spáry -->
+<path d="m11 35 26-6m-26 21 26-6m-26 21 26-6" fill="none" stroke="#e7e8e5" stroke-width="3"/>
+<path d="m40 31 36 7m-36 9 36 7m-36 9 36 7" fill="none" stroke="#d9dcda" stroke-width="3"/>
+<path d="m82 38 25-10m-25 21 25-10m-25 21 25-10" fill="none" stroke="#c8cdca" stroke-width="3"/>
+<!-- svislé sloupky s betonovými krytkami -->
+<path d="M5 19 12 17v58l-7 2zM34 13l7 2v53l-7-1zM76 20l7 2v50l-7 1zM107 10l7-3v52l-7 3z" fill="#707577" stroke="#33383a" stroke-width="1.5"/>
+<path d="m3 18 10-3v6l-10 3zm29-6 10 2v6l-10-2zm41 6 11 2v6l-11-2zm30-10 12-4v6l-12 4z" fill="#aeb2af" stroke="#555a5b" stroke-width="1"/>
+<!-- zelený tah podél plotu a jiskra -->
+<path d="M6 72c27 17 66 12 93-3 14-8 23-21 28-37" fill="none" stroke="#169954" stroke-width="6" stroke-linecap="round"/>
+<path d="m130 4 4 10 11 2-9 6 2 11-8-7-10 5 5-10-8-7 11 1z" fill="#12a95a"/>
+<path d="m119 32 2.5 5.5 6 .8-4.7 3.6 1.2 6-5-3.3-5.3 3 1.8-5.8-4.3-4.1 6-.2z" fill="#20bd69"/>
+</g>
+<text x="151" y="67" fill="#ffffff" font-family="Manrope,Arial,Helvetica,sans-serif" font-weight="800" font-size="55" letter-spacing="-2">RENOVAO</text>
+</svg>
