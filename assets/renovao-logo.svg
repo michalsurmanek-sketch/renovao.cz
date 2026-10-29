@@ -1,21 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 92" role="img" aria-labelledby="logoTitle">
-<title id="logoTitle">RENOVAO</title>
-<g transform="translate(3 4)" stroke-linejoin="round">
-<!-- Tři betonové panely v perspektivním zalomení -->
-<path d="M8 24 37 17 37 65 8 72Z" fill="#505456" stroke="#292e30" stroke-width="2"/>
-<path d="m37 17 42 8v45l-42-5z" fill="#363b3d" stroke="#292e30" stroke-width="2"/>
-<path d="m79 25 31-12v45L79 70z" fill="#252b2d" stroke="#202527" stroke-width="2"/>
-<!-- vodorovné betonové desky a jejich spáry -->
-<path d="m11 35 26-6m-26 21 26-6m-26 21 26-6" fill="none" stroke="#e7e8e5" stroke-width="3"/>
-<path d="m40 31 36 7m-36 9 36 7m-36 9 36 7" fill="none" stroke="#d9dcda" stroke-width="3"/>
-<path d="m82 38 25-10m-25 21 25-10m-25 21 25-10" fill="none" stroke="#c8cdca" stroke-width="3"/>
-<!-- svislé sloupky s betonovými krytkami -->
-<path d="M5 19 12 17v58l-7 2zM34 13l7 2v53l-7-1zM76 20l7 2v50l-7 1zM107 10l7-3v52l-7 3z" fill="#707577" stroke="#33383a" stroke-width="1.5"/>
-<path d="m3 18 10-3v6l-10 3zm29-6 10 2v6l-10-2zm41 6 11 2v6l-11-2zm30-10 12-4v6l-12 4z" fill="#aeb2af" stroke="#555a5b" stroke-width="1"/>
-<!-- zelený tah podél plotu a jiskra -->
-<path d="M6 72c27 17 66 12 93-3 14-8 23-21 28-37" fill="none" stroke="#169954" stroke-width="6" stroke-linecap="round"/>
-<path d="m130 4 4 10 11 2-9 6 2 11-8-7-10 5 5-10-8-7 11 1z" fill="#12a95a"/>
-<path d="m119 32 2.5 5.5 6 .8-4.7 3.6 1.2 6-5-3.3-5.3 3 1.8-5.8-4.3-4.1 6-.2z" fill="#20bd69"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 96" role="img" aria-labelledby="renovaoTitle">
+<title id="renovaoTitle">RENOVAO</title>
+<g stroke-linejoin="round" stroke-linecap="round">
+<!-- Betonový plot ve dvou perspektivních rovinách -->
+<path d="M9 29 51 15v60L9 85Z" fill="#333638" stroke="#626667" stroke-width="2"/>
+<path d="m57 17 41 15v52L57 75Z" fill="#292d2f" stroke="#64696a" stroke-width="2"/>
+<path d="m104 33 21 7v34l-21 9Z" fill="#24282a" stroke="#64696a" stroke-width="2"/>
+<!-- Spáry mezi třemi betonovými deskami -->
+<path d="m11 47 39-12m-39 30 39-12m-39 28 39-12" fill="none" stroke="#bfc2c1" stroke-width="2.8"/>
+<path d="m59 34 37 13m-37 12 37 13m-37 12 37 13" fill="none" stroke="#c6c9c8" stroke-width="2.8"/>
+<path d="m106 48 17 6m-17 12 17 6" fill="none" stroke="#b8bcbb" stroke-width="2.5"/>
+<!-- Svislé nosné sloupky -->
+<path d="M4 25 12 22v66l-8 3Z" fill="#55595b" stroke="#a3a6a5" stroke-width="1.6"/>
+<path d="m48 12 9-3v71l-9-2Z" fill="#696d6e" stroke="#b0b3b2" stroke-width="1.6"/>
+<path d="m96 28 9 3v56l-9 4Z" fill="#555a5b" stroke="#9da1a0" stroke-width="1.6"/>
+<path d="m122 37 7 2v36l-7 3Z" fill="#4a4f50" stroke="#8e9291" stroke-width="1.4"/>
+<!-- Zelený oblouk a jemný spodní stín -->
+<path d="M8 88c28 13 69 8 98-10 20-13 31-32 31-56" fill="none" stroke="#0c6740" stroke-width="2.2"/>
+<path d="M8 84c27 13 68 8 97-10 19-12 29-30 30-51" fill="none" stroke="#13b956" stroke-width="5.5"/>
+<!-- Čtyřcípá jiskra a krátký paprsek -->
+<path d="M113 17c9 0 15-2 22-7-1 7 1 12 7 17-7 0-12 2-17 8-1-7-4-12-12-15 7 0 12-1 17-5-5 2-10 3-17 2Z" fill="#13b956" stroke="none"/>
+<path d="M104 16c8-2 14-2 21-1" fill="none" stroke="#13b956" stroke-width="3"/>
 </g>
-<text x="151" y="67" fill="#103d27" font-family="Manrope,Arial,Helvetica,sans-serif" font-weight="800" font-size="55" letter-spacing="-2">RENOVAO</text>
+<text x="151" y="68" fill="#003f27" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="55" letter-spacing="-1.8">RENOVAO</text>
 </svg>
