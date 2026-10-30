@@ -1,14 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title">
-<title id="title">Symbol betonového plotu RENOVAO</title>
-<g stroke-linejoin="round" stroke-linecap="round">
-  <path d="M32 68 218 25v115L32 184Z" fill="#55595a"/>
-  <path d="M43 80 208 42v26L43 108Z" fill="#d3d1c8"/>
-  <path d="M43 116 208 78v26L43 144Z" fill="#c5c4bb"/>
-  <path d="M43 152 208 114v25L43 180Z" fill="#deddd5"/>
-  <path d="M22 60 45 55v131l-23 5Z" fill="#34393a"/>
-  <path d="m207 23 24-5v126l-24 6Z" fill="#454a4b"/>
-  <path d="m218 25 10-2v123l-10 3Z" fill="#929695"/>
-  <path d="M31 190c66 26 164 8 218-43 27-25 43-53 47-83" fill="none" stroke="#087443" stroke-width="9"/>
-  <path d="M276 66c10-7 17-12 25-19" fill="none" stroke="#34a853" stroke-width="5"/>
-  <path d="M301 22q5 18 23 24-18 5-23 23-5-18-23-23 18-6 23-24Z" fill="#34a853" stroke="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 330" role="img" aria-labelledby="title"><title id="title">Symbol RENOVAO – renovace betonových plotů</title><g stroke-linejoin="round" stroke-linecap="round">
+  <defs>
+    <linearGradient id="concrete" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e1dfd6"/><stop offset="1" stop-color="#bdbdb6"/></linearGradient>
+  </defs>
+  <!-- robustní betonové sloupky a perspektivně ustupující desky -->
+  <path d="M24 70 110 44v214l-86 27Z" fill="#0d2d21"/>
+  <path d="m110 44 21 9v206l-21-1Z" fill="#183d2e"/>
+  <path d="m17 61 94-29 31 12-96 29Z" fill="#153b2d"/>
+  <path d="M111 61 281 104v148l-170 0Z" fill="url(#concrete)"/>
+  <path d="m111 61 170 43v31L111 93Z" fill="url(#concrete)"/>
+  <path d="m111 111 170 42v31l-170-42Z" fill="url(#concrete)"/>
+  <path d="m111 161 170 41v31l-170-41Z" fill="url(#concrete)"/>
+  <path d="m111 211 170 41v29l-170-1Z" fill="url(#concrete)"/>
+  <path d="m270 100 21 6v151l-21-2Z" fill="#0d2d21"/>
+  <path d="m281 98 26 8v151l-26-8Z" fill="#183d2e"/>
+  <path d="m264 95 19-13 30 10-22 14Z" fill="#153b2d"/>
+  <path d="M110 44v214M281 104v148" fill="none" stroke="#8d918c" stroke-width="5"/>
+  <path d="m111 93 170 42M111 143l170 42M111 193l170 40M111 243l170 39" fill="none" stroke="#ffffff" stroke-opacity=".9" stroke-width="5"/>
+  <!-- plynulý tah symbolizující obnovu -->
+  <path d="M20 276c93 39 212 9 280-67 30-34 46-73 49-111" fill="none" stroke="#087443" stroke-width="9"/>
+  <path d="M37 280c89 12 181-20 244-79 28-26 49-57 67-103-13 66-39 113-83 149-62 50-145 68-228 51Z" fill="#ffffff"/>
+  <path d="M323 96c11-10 19-17 30-25" fill="none" stroke="#087443" stroke-width="7"/>
+  <path d="M355 27q7 24 31 31-24 7-31 31-7-24-31-31 24-7 31-31Z" fill="#34a853"/>
 </g></svg>
