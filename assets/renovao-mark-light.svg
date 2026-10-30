@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#f5f8f3"/><path d="M12 49V27l10 8 10-8 10 8 10-8v22" fill="none" stroke="#145b3a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 52h36" stroke="#cbe67c" stroke-width="4" stroke-linecap="round"/><path d="M47 13v8m-4-4h8" stroke="#cbe67c" stroke-width="3" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title">
+<title id="title">Symbol betonového plotu RENOVAO</title>
+<g stroke-linejoin="round" stroke-linecap="round">
+  <path d="M32 68 218 25v115L32 184Z" fill="#55595a"/>
+  <path d="M43 80 208 42v26L43 108Z" fill="#d3d1c8"/>
+  <path d="M43 116 208 78v26L43 144Z" fill="#c5c4bb"/>
+  <path d="M43 152 208 114v25L43 180Z" fill="#deddd5"/>
+  <path d="M22 60 45 55v131l-23 5Z" fill="#34393a"/>
+  <path d="m207 23 24-5v126l-24 6Z" fill="#454a4b"/>
+  <path d="m218 25 10-2v123l-10 3Z" fill="#929695"/>
+  <path d="M31 190c66 26 164 8 218-43 27-25 43-53 47-83" fill="none" stroke="#087443" stroke-width="9"/>
+  <path d="M276 66c10-7 17-12 25-19" fill="none" stroke="#34a853" stroke-width="5"/>
+  <path d="M301 22q5 18 23 24-18 5-23 23-5-18-23-23 18-6 23-24Z" fill="#34a853" stroke="none"/>
+</g></svg>
