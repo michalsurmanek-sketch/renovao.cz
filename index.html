@@ -120,19 +120,22 @@ body.launch-modal-open{overflow:hidden}
 @media(prefers-reduced-motion:reduce){.launch-overlay{backdrop-filter:none;-webkit-backdrop-filter:none}}
 </style>
 <style id="renovao-hero-photo-zoom">
+.hero-art {
+  background-size:cover;
+  background-position:50% 52%;
+  transition:background-size 700ms cubic-bezier(.2,.75,.25,1), background-position 700ms cubic-bezier(.2,.75,.25,1);
+}
 @media (min-width:701px) and (hover:hover) {
-  .hero-art {
-    background-size:cover;
-    background-position:50% 52%;
-    transition:background-size 1s cubic-bezier(.2,.75,.25,1), background-position 1s cubic-bezier(.2,.75,.25,1);
-  }
-  .hero-art:hover {
+  .hero-art:hover,
+  .hero-art:focus-visible {
     background-size:260% auto;
     background-position:50% 52%;
   }
 }
 @media (max-width:700px) {
-  .hero-art { background-size:cover !important; transition:none !important; }
+  .hero-art { cursor:pointer; -webkit-tap-highlight-color:transparent; }
+  .hero-art.is-zoomed { background-size:230% auto; background-position:50% 52%; }
+  @media (prefers-reduced-motion:reduce) { .hero-art { transition:none; } }
 }
 </style>
 </head>
@@ -266,4 +269,27 @@ leadForm.addEventListener('submit',async e=>{
 })();
 </script>
 
+<script id="renovao-mobile-hero-zoom">
+(() => {
+  const photo=document.querySelector('.hero-art');
+  if(!photo)return;
+  photo.setAttribute('role','button');
+  photo.setAttribute('tabindex','0');
+  photo.setAttribute('aria-label','Přiblížit detail proměny plotu');
+  photo.setAttribute('aria-pressed','false');
+  const toggle=()=>{
+    if(!window.matchMedia('(max-width: 700px)').matches)return;
+    const zoomed=photo.classList.toggle('is-zoomed');
+    photo.setAttribute('aria-pressed',String(zoomed));
+    photo.setAttribute('aria-label',zoomed?'Vrátit původní zobrazení fotografie':'Přiblížit detail proměny plotu');
+  };
+  photo.addEventListener('click',toggle);
+  photo.addEventListener('keydown',event=>{
+    if((event.key==='Enter'||event.key===' ')&&window.matchMedia('(max-width: 700px)').matches){
+      event.preventDefault();
+      toggle();
+    }
+  });
+})();
+</script>
 </body></html>
