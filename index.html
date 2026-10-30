@@ -252,7 +252,7 @@ leadForm.addEventListener('submit',async e=>{
 <script>
 (() => {
   const image=document.getElementById('renovaoHeroImage');
-  if(!image||!window.matchMedia('(hover: hover) and (pointer: fine)').matches)return;
+  if(!image)return;
   const full={x:0,y:0,width:800,height:530};
   const detail={x:275,y:220,width:250,height:180};
   let frame=0;
@@ -271,8 +271,8 @@ leadForm.addEventListener('submit',async e=>{
     frame=requestAnimationFrame(step);
   };
   const art=image.closest('.hero-art');
-  art.addEventListener('mouseenter',()=>animate(detail));
-  art.addEventListener('mouseleave',()=>animate(full));
+  art.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse')animate(detail)});
+  art.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse')animate(full)});
 })();
 </script>
 </body></html>
