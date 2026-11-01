@@ -297,23 +297,37 @@ leadForm.addEventListener('submit',async e=>{
 (() => {
   const photo=document.querySelector('.hero-art');
   if(!photo)return;
+  const mobile=window.matchMedia('(max-width: 700px)');
+  let resetTimer;
+  const reset=()=>{
+    window.clearTimeout(resetTimer);
+    photo.classList.remove('is-zoomed');
+    photo.setAttribute('aria-pressed','false');
+    photo.setAttribute('aria-label','Přiblížit detail proměny plotu');
+  };
+  const preview=()=>{
+    if(!mobile.matches)return;
+    window.clearTimeout(resetTimer);
+    photo.classList.add('is-zoomed');
+    photo.setAttribute('aria-pressed','true');
+    photo.setAttribute('aria-label','Detail proměny plotu se za chvíli vrátí do původního zobrazení');
+    resetTimer=window.setTimeout(reset,1400);
+  };
   photo.setAttribute('role','button');
   photo.setAttribute('tabindex','0');
   photo.setAttribute('aria-label','Přiblížit detail proměny plotu');
   photo.setAttribute('aria-pressed','false');
-  const toggle=()=>{
-    if(!window.matchMedia('(max-width: 700px)').matches)return;
-    const zoomed=photo.classList.toggle('is-zoomed');
-    photo.setAttribute('aria-pressed',String(zoomed));
-    photo.setAttribute('aria-label',zoomed?'Vrátit původní zobrazení fotografie':'Přiblížit detail proměny plotu');
-  };
-  photo.addEventListener('click',toggle);
+  photo.addEventListener('click',preview);
   photo.addEventListener('keydown',event=>{
-    if((event.key==='Enter'||event.key===' ')&&window.matchMedia('(max-width: 700px)').matches){
+    if((event.key==='Enter'||event.key===' ')&&mobile.matches){
       event.preventDefault();
-      toggle();
+      preview();
     }
   });
+  document.addEventListener('click',event=>{
+    if(!photo.contains(event.target))reset();
+  });
+  mobile.addEventListener?.('change',event=>{if(!event.matches)reset()});
 })();
 </script>
 </body></html>
