@@ -96,6 +96,19 @@ h1{font-size:41px;margin:18px 0 14px}.lead{font-size:15px;margin-bottom:21px}
 .launch-countdown-value{font:800 22px/1 Manrope,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.04em;color:#17221b}
 .launch-countdown-caption{margin-top:5px;font-size:8px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#768079}
 @media(max-width:700px){.launch-countdown{max-width:100%;margin-top:20px;padding:13px}.launch-countdown-value{font-size:20px}.launch-countdown-label{font-size:9px}.launch-countdown-date{font-size:10px}}
+
+/* RENOVAO footer background – isolated from other sections */
+.footer{position:relative;isolation:isolate;overflow:hidden;background:#002d1c url('assets/footer-renovao-bg.svg') center center/cover no-repeat;color:#f7fff7;padding:62px 0 23px}
+.footer::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,28,18,.76),rgba(0,36,22,.53) 56%,rgba(0,23,15,.12));pointer-events:none}
+.footer .footgrid{grid-template-columns:1.35fr .8fr 1.15fr;gap:56px;padding-bottom:46px}
+.footer .footgrid>div{min-width:0}
+.footer h4{color:#fff;font-size:16px;margin:4px 0 20px;font-weight:800}
+.footer p{color:#e0eee2;font-size:14px;line-height:1.7;max-width:365px}
+.footer a,.footer address{color:#e4efe6;font-size:14px;line-height:1.65;margin:9px 0}
+.footer .footgrid a:not(.brand):hover{color:#cbed79}
+.footer .copyright{border-top:1px solid rgba(191,229,123,.68);padding-top:20px;color:#edf5e9;font-size:12px}
+@media(max-width:760px){.footer{background-position:68% center;padding:43px 0 24px}.footer::before{background:linear-gradient(90deg,rgba(0,31,19,.94),rgba(0,34,21,.81))}.footer .footgrid{grid-template-columns:1fr 1fr;gap:28px 20px;padding-bottom:30px}.footer .footgrid>div:first-child{grid-column:1/-1}.footer h4{font-size:15px;margin-bottom:13px}.footer a,.footer address,.footer p{font-size:13px}.footer .copyright{font-size:11px;line-height:1.9;display:flex;flex-wrap:wrap;gap:8px 25px}}
+@media(max-width:420px){.footer .footgrid{grid-template-columns:1fr}.footer .footgrid>div:first-child{grid-column:auto}.footer .brand img{max-width:100%;height:auto}}
 </style><style id="site-launch-countdown-styles">
 .launch-overlay{--lc-green:#087443;--lc-green-dark:#163d2d;--lc-accent:#f07828;position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;padding:18px;background:rgba(13,35,28,.62);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
 .launch-overlay[hidden]{display:none!important}
