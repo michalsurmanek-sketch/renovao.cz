@@ -122,7 +122,6 @@ body.launch-modal-open{overflow:hidden}
 <style id="renovao-hero-caption-styles">
 @media (min-width:701px) and (hover:hover) {
   .hero-art:hover .hero-zoom-caption,
-  .hero-art:focus-visible .hero-zoom-caption { display:grid!important; }
 }
 .hero-zoom-caption {
   display:none;
@@ -150,15 +149,13 @@ body.launch-modal-open{overflow:hidden}
 }
 @media (min-width:701px) and (hover:hover) {
   .hero-art:hover,
-  .hero-art:focus-visible {
+  .hero-art:hover {
     background-size:260% auto;
     background-position:50% 52%;
   }
 }
 @media (max-width:700px) {
-  .hero-art { cursor:pointer; -webkit-tap-highlight-color:transparent; }
-  .hero-art.is-zoomed { background-size:230% auto; background-position:50% 52%; }
-  .hero-art.is-zoomed .hero-zoom-caption { display:grid!important; }
+  .hero-art { cursor:default; }
   @media (prefers-reduced-motion:reduce) { .hero-art { transition:none; } }
 }
 </style>
@@ -293,41 +290,5 @@ leadForm.addEventListener('submit',async e=>{
 })();
 </script>
 
-<script id="renovao-mobile-hero-zoom">
-(() => {
-  const photo=document.querySelector('.hero-art');
-  if(!photo)return;
-  const mobile=window.matchMedia('(max-width: 700px)');
-  let resetTimer;
-  const reset=()=>{
-    window.clearTimeout(resetTimer);
-    photo.classList.remove('is-zoomed');
-    photo.setAttribute('aria-pressed','false');
-    photo.setAttribute('aria-label','Přiblížit detail proměny plotu');
-  };
-  const preview=()=>{
-    if(!mobile.matches)return;
-    window.clearTimeout(resetTimer);
-    photo.classList.add('is-zoomed');
-    photo.setAttribute('aria-pressed','true');
-    photo.setAttribute('aria-label','Detail proměny plotu se za chvíli vrátí do původního zobrazení');
-    resetTimer=window.setTimeout(reset,1400);
-  };
-  photo.setAttribute('role','button');
-  photo.setAttribute('tabindex','0');
-  photo.setAttribute('aria-label','Přiblížit detail proměny plotu');
-  photo.setAttribute('aria-pressed','false');
-  photo.addEventListener('click',preview);
-  photo.addEventListener('keydown',event=>{
-    if((event.key==='Enter'||event.key===' ')&&mobile.matches){
-      event.preventDefault();
-      preview();
-    }
-  });
-  document.addEventListener('click',event=>{
-    if(!photo.contains(event.target))reset();
-  });
-  mobile.addEventListener?.('change',event=>{if(!event.matches)reset()});
-})();
-</script>
+
 </body></html>
